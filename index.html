@@ -47,7 +47,7 @@ canvas{display:block;border-radius:10px}
 <div id="ov"><div class="card"><h2 id="ot"></h2><p id="om"></p><div id="oc"></div><div id="ob"></div></div></div>
 <script>
 /* ===== CONFIGURE AQUI ===== */
-const NAME='Meu Amor';            // nome dela
+const NAME='Brunuca';            // nome dela
 const START='2026-09-27';     // data do Dia 1 (AAAA-MM-DD)
 const BIRTH='2026-10-26';     // data do Dia 30 (último desafio)
 const BDAY='2026-10-27';      // data do aniversário (usada na contagem regressiva)
@@ -131,7 +131,7 @@ function ov(t,m,c,btns){$('ot').textContent=t;$('om').textContent=m||'';$('oc').
 function home(){
   st='idle';$('game').style.display='none';$('home').style.display='flex';
   const i=today()-1,open=test?30:i>=OFF?30:Math.max(0,Math.min(29,i+1));
-  $('sub').textContent='Para '+NAME+' · '+(test?'modo teste: tudo liberado':i<0?'começa em '+dateOf(1):i>=BOFF?'hoje é o grande dia!':'faltam '+(BOFF-i)+' dias para o seu aniversário');
+  $('sub').textContent=''+NAME+' · '+(test?'modo teste: tudo liberado':i<0?'começa em '+dateOf(1):i>=BOFF?'hoje é o grande dia!':'faltam '+(BOFF-i)+' dias para o seu aniversário');
   $('coins').innerHTML=rs(Object.keys(sv.done).length*10)+' <small style="color:var(--mut);font-size:14px;font-weight:400"></small>';
   const g=$('grid');g.innerHTML='';
   for(let d=1;d<=30;d++){const b=document.createElement('button');
